@@ -1,0 +1,8 @@
+{
+    "docDir":"docs",
+    "demoDir":"demos",
+    "args": [
+        'title',
+        'desc'
+    ]
+}
