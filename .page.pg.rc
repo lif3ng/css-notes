@@ -1,8 +1,9 @@
 {
-    "docDir":"docs",
-    "demoDir":"demos",
-    "args": [
-        'title',
-        'desc'
-    ]
+  "docDir": "docs",
+  "demoDir": "demos",
+  "copyContentTpl": "<Demo name=\"{{ key }}\" />",
+  "args": [
+    "title",
+    "desc"
+  ]
 }

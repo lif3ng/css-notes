@@ -1,0 +1,4 @@
+{
+  "html": "<div>x</div>\n",
+  "css": "div {\n  --var1: red;\n  color: var(--var1);\n}\n"
+}

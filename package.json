@@ -17,5 +17,10 @@
   "scripts": {
     "start": "vuepress dev docs",
     "build": "vuepress build docs"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   }
 }
