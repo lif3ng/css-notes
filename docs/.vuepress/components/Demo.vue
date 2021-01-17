@@ -28,7 +28,7 @@ export default {
       .then((module) => {
         const data = module.default;
         console.log("demo data done", data);
-        this.demoData = data;
+        this.demoData = { controlBtns: ["format", "fullscreen"], ...data };
         this.loaded = true;
       });
   },
