@@ -1,0 +1,4 @@
+{
+  "html": "<div w=\"96\" class=\"px\"></div>\n<div w=\"1\" class=\"in\"></div>\n<div w=\"2.54\" class=\"cm\"></div>\n",
+  "css": "div {\n  background: #def;\n  text-align: center;\n}\ndiv + div {\n  border-top: 1px solid #abc;\n}\ndiv:before {\n  content: attr(w) \" \" attr(class);\n}\n.cm {\n  /* width: attr(w cm)  */\n  width: 2.54cm;\n}\n.in {\n  width: 1in;\n}\n.px {\n  width: 96px;\n}\n"
+}
