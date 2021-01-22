@@ -5,7 +5,14 @@ module.exports = {
   shouldPrefetch: () => {
     return false;
   },
-  themeConfig: { sidebarDepth: 2, sidebar: ["/unit", "/variables"] },
+  themeConfig: {
+    sidebarDepth: 2,
+    sidebar: [
+      "/unit",
+      "/variables",
+      { title: "弹性布局", children: ["/flex/basic"] },
+    ],
+  },
   markdown: {
     extendMarkdown: (md) => {
       md.set({ linkify: true });
