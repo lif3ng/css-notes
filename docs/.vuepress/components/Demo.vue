@@ -1,8 +1,11 @@
 <template>
-  <div>
+  <details>
+    <summary :id="`demo-${name}`">
+      <!-- <a :href="`#demo-${name}`" class="header-anchor">#</a> -->
+    </summary>
     <html-playground v-if="loaded" v-bind="demoData" />
     <div v-else>demo loading</div>
-  </div>
+  </details>
 </template>
 <script>
 export default {
@@ -22,7 +25,7 @@ export default {
     import("page-playground")
       .then(() =>
         import(
-          /* webpackChunkName: '[request]' */ `../../../demos/${path}/${this.name}`
+          /* webpackChunkName: '[index].demo_[request]' */ `../../../demos/${path}/${this.name}`
         )
       )
       .then((module) => {
@@ -34,3 +37,28 @@ export default {
   },
 };
 </script>
+<style scoped lang="stylus">
+details{
+  summary{
+    margin-bottom: 1em;
+    outline: none;
+    &:hover {
+      .header-anchor{
+        opacity:1
+      }
+    }
+    &:focus {
+      text-decoration: underline;
+    }
+    &:after{
+      content:'展开 Demo'
+      cursor:pointer;
+    }
+  }
+}
+details[open]{
+  summary:after{
+    content:'收起 Demo'
+  }
+}
+</style>
