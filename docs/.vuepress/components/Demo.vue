@@ -1,9 +1,9 @@
 <template>
-  <details>
-    <summary :id="`demo-${name}`">
+  <details ref="details">
+    <summary :id="`demo-${name}`" @click="toggleDetails">
       <!-- <a :href="`#demo-${name}`" class="header-anchor">#</a> -->
     </summary>
-    <html-playground v-if="loaded" v-bind="demoData" />
+    <html-playground v-if="loaded" v-bind="demoData" ref="playground" />
     <div v-else>demo loading</div>
   </details>
 </template>
@@ -35,6 +35,34 @@ export default {
         this.loaded = true;
       });
   },
+  methods: {
+    toggleDetails(e) {
+      const { open } = this.$refs.details;
+      const setHeight = (setZero) => {
+        const playground = this.$refs.playground;
+        if (playground) {
+          const ele = playground.$el;
+          if (setZero) {
+            ele.style.height = 0;
+          } else {
+            ele.style.height = `${ele.scrollHeight}px`;
+          }
+        }
+      };
+      if (open) {
+        // 收起 height: xxx -> 0
+        e.preventDefault();
+        setTimeout(setHeight.bind(null, true), 100);
+        setTimeout(() => {
+          this.$refs.details.open = false;
+        }, 300);
+      } else {
+        // 展开 height: 0 -> xxx
+        setHeight(true);
+        setTimeout(setHeight, 100);
+      }
+    },
+  },
 };
 </script>
 <style scoped lang="stylus">
@@ -54,7 +82,12 @@ details{
       content:'展开 Demo'
       cursor:pointer;
     }
+    + * {
+      overflow: hidden;
+      transition: height .3s
+    }
   }
+
 }
 details[open]{
   summary:after{
