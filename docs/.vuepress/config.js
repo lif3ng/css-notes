@@ -8,6 +8,7 @@ module.exports = {
   themeConfig: {
     sidebarDepth: 2,
     sidebar: [
+      "value-defs",
       "/unit",
       "/variables",
       { title: "弹性布局", children: ["/flex/basic"] },
