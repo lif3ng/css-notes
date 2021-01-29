@@ -1,10 +1,15 @@
 <template>
-  <details ref="details">
+  <div v-if="!loaded">demo loading</div>
+  <html-css-comparison-table
+    v-else-if="demoData.cssTpl"
+    v-bind="demoData"
+    ref="playground"
+  />
+  <details ref="details" v-else>
     <summary :id="`demo-${name}`" @click="toggleDetails">
       <!-- <a :href="`#demo-${name}`" class="header-anchor">#</a> -->
     </summary>
-    <html-playground v-if="loaded" v-bind="demoData" ref="playground" />
-    <div v-else>demo loading</div>
+    <html-playground v-bind="demoData" ref="playground" />
   </details>
 </template>
 <script>
@@ -38,6 +43,13 @@ export default {
   methods: {
     toggleDetails(e) {
       const { open } = this.$refs.details;
+      const cleanHeight = () => {
+        const playground = this.$refs.playground;
+        if (playground) {
+          const ele = playground.$el;
+          ele.style.height = "";
+        }
+      };
       const setHeight = (setZero) => {
         const playground = this.$refs.playground;
         if (playground) {
@@ -52,14 +64,16 @@ export default {
       if (open) {
         // 收起 height: xxx -> 0
         e.preventDefault();
+        setHeight(false);
         setTimeout(setHeight.bind(null, true), 100);
         setTimeout(() => {
           this.$refs.details.open = false;
-        }, 300);
+        }, 400);
       } else {
         // 展开 height: 0 -> xxx
         setHeight(true);
         setTimeout(setHeight, 100);
+        setTimeout(cleanHeight, 400);
       }
     },
   },

@@ -6154,10 +6154,10 @@ package-json@^6.3.0:
     registry-url "^5.0.0"
     semver "^6.2.0"
 
-page-playground@^0.1.11:
-  version "0.1.11"
-  resolved "https://registry.npm.taobao.org/page-playground/download/page-playground-0.1.11.tgz#f59d89a9882eca1670343227328882f75e1eaa29"
-  integrity sha1-9Z2JqYguyhZwNDInMoiC914eqik=
+page-playground@^0.1.15:
+  version "0.1.15"
+  resolved "https://registry.npm.taobao.org/page-playground/download/page-playground-0.1.15.tgz#5286c40dd0dc9bcd3604b5995c06f66b493a9a29"
+  integrity sha1-UobEDdDcm802BLWZXAb2a0k6mik=
   dependencies:
     "@codemirror/basic-setup" "^0.17.1"
     "@codemirror/lang-css" "^0.17.1"

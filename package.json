@@ -12,7 +12,7 @@
     "vuepress": "^1.7.1"
   },
   "dependencies": {
-    "page-playground": "^0.1.11"
+    "page-playground": "^0.1.15"
   },
   "scripts": {
     "start": "vuepress dev docs",

@@ -1,5 +1,7 @@
 # 基础使用
 
+![](/flex-direction-terms.svg)
+
 ## display: flex
 
 设置后
@@ -15,3 +17,7 @@
 和 `display: flex` 的区别只有：弹性容器在主轴方向（默认是 row: left -> right）不会自动撑满。
 
 <Demo name="inline-flex" />
+
+## 参考
+
+https://www.w3.org/TR/css-flexbox/
