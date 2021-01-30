@@ -19,7 +19,14 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 14
-      - run: yarn
+      - uses: actions/cache@v2
+        id: yarn-cache
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-yarn-${{ hashFiles('yarn.lock') }}
+      - name: Install Dependencies
+        if: steps.yarn-cache.outputs.cache-hit != 'true'
+        run: yarn
       - run: ghpages=1 yarn build
       - run: |
           git config --global user.email "lif3ng@icloud.com"
