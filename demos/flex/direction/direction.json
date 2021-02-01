@@ -1,0 +1,6 @@
+{
+  "html": "<div class=\"container\">\n  <div class=\"item\">1</div>\n  <div class=\"item\">2</div>\n  <div class=\"item\">3</div>\n  <div class=\"item\">4</div>\n  <div class=\"item\">5</div>\n</div>\n",
+  "css": ".container {\n  display: flex;\n  flex-wrap: wrap;\n  line-height: 1;\n  width: 100px;\n  height: 100px;\n}\n.item {\n  display: inline-block;\n  padding: 0.5em;\n  border: 1px solid #ccc;\n}\n",
+  "cssTpl": ".container{\n  flex-direction: {{}}\n}",
+  "cssValueList": ["row", "row-reverse", "column", "column-reverse"]
+}

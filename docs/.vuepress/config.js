@@ -11,7 +11,10 @@ module.exports = {
       "value-defs",
       "/unit",
       "/variables",
-      { title: "弹性布局", children: ["/flex/basic", "/flex/direction"] },
+      {
+        title: "弹性布局",
+        children: ["/flex/basic", "/flex/direction", "/flex/wrap"],
+      },
     ],
   },
   markdown: {
