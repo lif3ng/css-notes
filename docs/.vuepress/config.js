@@ -13,7 +13,12 @@ module.exports = {
       "/variables",
       {
         title: "弹性布局",
-        children: ["/flex/basic", "/flex/direction", "/flex/wrap"],
+        children: [
+          "/flex/basic",
+          "/flex/direction",
+          "/flex/wrap",
+          "/flex/justify-content",
+        ],
       },
     ],
   },

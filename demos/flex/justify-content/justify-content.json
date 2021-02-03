@@ -1,0 +1,13 @@
+{
+  "html": "<div class=\"container\">\n  <div>aaa</div>\n  <div>bbbb</div>\n  <div>ccccc</div>\n</div>\n",
+  "css": ".container {\n  display: flex;\n  width: 300px;\n}\n.container div {\n  background: #abc;\n}\n.container div + div {\n  margin-left: 5px;\n}\n",
+  "cssTpl": ".container{\n  justify-content: {{}}\n}",
+  "cssValueList": [
+    "flex-start",
+    "flex-end",
+    "center",
+    "space-between",
+    "space-around",
+    "space-evenly"
+  ]
+}
