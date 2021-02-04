@@ -8,7 +8,12 @@
 - flex-end 靠近主轴终边
 - center 居中显示在主轴尺寸中点
 - space-between 把每行第一个元素放在主轴起边，每行最后一个元素放在主轴终边，在相邻元素间放置等量空白
-- space-around
+- space-around 剩余空间平均分给每个元素，行内相邻元素距离相同，行首行尾元素距行首行尾距离为相邻元素的一半
+- space-evenly 行内 n 个元素，剩余空间分成 n+1 份，行首行尾元素距离起边终边距离和距离相邻元素的距离相同
+
+以上不是 `justify-content` 属性全部取值，只是用于弹性布局的取值。同样，名称里不带有 `flex-` 的属性一般都不单用在弹性布局。
+
+`justify-content` 不仅能用于弹性容器，还能用于多列容器和栅格容器。
 
 <Demo name="justify-content" />
 
@@ -17,6 +22,10 @@
 ## align-self
 
 ## 参考
+
+https://www.w3.org/TR/css-align-3/#propdef-justify-content
+
+https://www.w3.org/TR/css-align-3/#distribution-values
 
 https://www.w3.org/TR/css-flexbox/#justify-content-property
 
