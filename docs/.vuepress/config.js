@@ -9,6 +9,7 @@ module.exports = {
     sidebarDepth: 2,
     sidebar: [
       "value-defs",
+      "priority",
       "/unit",
       "/variables",
       {
