@@ -1,0 +1,4 @@
+{
+  "html": "<ul>\n  <li foo=\"bar\"></li>\n  <li foo=\"barabc\"></li>\n  <li foo=\"bar-\"></li>\n  <li foo=\"bar-abc\"></li>\n  <li foo=\"bar-abc-def\"></li>\n</ul>\n",
+  "css": "li:before {\n  content: attr(foo);\n}\n[foo|=\"bar\"] {\n  background: #ccc;\n}\n"
+}

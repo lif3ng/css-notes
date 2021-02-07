@@ -1,0 +1,4 @@
+{
+  "html": "<ul>\n  <li>a</li>\n  <li a>b</li>\n  <li a=\"a\">c</li>\n  <li a=\"\">d</li>\n</ul>\n",
+  "css": "[a] {\n  background: #ccc;\n}\n"
+}
