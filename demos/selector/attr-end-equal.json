@@ -1,0 +1,4 @@
+{
+  "html": "<ul>\n  <li file=\"a.pdf\"></li>\n  <li file=\"a.PDF\"></li>\n  <li file=\"pic.png\"></li>\n</ul>\n",
+  "css": "li:before {\n  content: attr(file);\n}\n\n[file$=\"pdf\" i]:after {\n  content: \"文档\";\n  border: 1px solid #ccc;\n  margin-left: 1em;\n  font-size: 0.8em;\n}\n"
+}
