@@ -1,0 +1,4 @@
+{
+  "html": "<ul>\n  <li><em>em</em></li>\n  <li><em>em</em> text</li>\n  <li><em>em</em> <em>other em</em></li>\n</ul>\n",
+  "css": "em:only-child {\n  color: blue;\n}\n"
+}

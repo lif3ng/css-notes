@@ -1,0 +1,4 @@
+{
+  "html": "<!-- 空白被格式化掉了，todo:禁用格式化 -->\n<ul>\n  <li></li>\n  <li><!-- --></li>\n  <li></li>\n  <li></li>\n</ul>\n",
+  "css": "li:empty {\n  background: #ccc;\n}\n"
+}
