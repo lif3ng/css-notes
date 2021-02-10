@@ -1,0 +1,4 @@
+{
+  "html": "<ul>\n  <li><em>em</em> <b>b</b></li>\n  <li><em>em</em> <em>em</em> <b>b</b></li>\n  <li><em>em</em></li>\n</ul>\n",
+  "css": "li :only-of-type {\n  border: 1px solid;\n}\nli em:only-of-type {\n  background: #ccc;\n}\n"
+}

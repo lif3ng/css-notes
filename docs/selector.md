@@ -21,8 +21,36 @@
 - `:root` 伪类用于选取文档的根元素，在 HTML 中根元素始终是 `html`.
 - `:empty` 伪类用于选取没有任何内容（元素、文本节点）的元素。元素内只包含空格、换行，**不是**空元素，因为空白属于文本节点；元素内只包含注释，是空元素。`:empty` 是唯一一个在匹配时考虑文本节点的选择器。
   <Demo name="empty" />
-- `:only-child` 伪类选择的元素是其父元素的唯一子元素，其隔壁可以有文本节点，文本节点不是元素。
+- `:first-child` 伪类选择的是第一个子元素。
+- `:last-child` 伪类选择的是最后一个子元素。
+  <Demo name="first-last-child" />
+- `:only-child` 伪类选择的元素是其父元素的唯一子元素。功能上等价于 `:first-child:last-child`.
   <Demo name="only-child" />
+- `:nth-child(n)` 伪类用于选择第 n 个子元素。
+
+  其中 `n` 的位置取值为[An + B 表达式](https://drafts.csswg.org/css-syntax-3/#anb-microsyntax), 典型可取值有：
+
+  - 整数 `:nth-child(2)` 表示第二个子元素
+  - 包含 n 的表达式 `nth-child(2n)` 表示第 2、4、6... 个子元素
+  - 关键字
+    - `even` 偶数 `:nth-child(even)` 等效于 `nth-child(2n)`
+    - `odd` 奇数 `:nth-child(odd)` 等效于 `nth-child(2n+1)`
+
+- `:nth-last-child(n)` 伪类用于选择倒数第 n 个子元素
+- `:first-of-type` 伪类选择的元素是父元素的第一个该类型（html 标签）的元素。
+- `:last-of-type` 伪类选择的元素是父元素的最后一个该类型的元素。
+- `:only-of-type` 伪类选择的是在兄弟元素中间的唯一的那种（html 标签）元素
+  <Demo name="only-of-type" />
+- `:nth-of-type(n)` 第 n 个该类型元素
+- `:nth-last-of-type(n)` 倒数第 n 个该类型元素
+
+### 动态伪类
+
+#### 超链接伪类
+
+#### 用户操作伪类
+
+### UI 状态伪类
 
 ## 组合符（Combinator）
 

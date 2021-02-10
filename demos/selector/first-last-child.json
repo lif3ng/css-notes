@@ -1,0 +1,4 @@
+{
+  "html": "<ul>\n  <li></li>\n  <li></li>\n  <li></li>\n</ul>\n",
+  "css": "li:first-child {\n  background: blue;\n}\nli:last-child {\n  background: red;\n}\n"
+}
