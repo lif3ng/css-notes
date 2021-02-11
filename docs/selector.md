@@ -50,7 +50,29 @@
 
 #### 用户操作伪类
 
+- `:hover`
+- `:active`
+- `:focus`
+- `:focus-visible`
+- `:focus-within`
+
 ### UI 状态伪类
+
+- `:enabled` 启用的 UI 元素（可以接受输入）
+- `:disabled` 禁用的 UI 元素（不接受用户输入）
+  <Demo name="disabled" />
+- `:checked` 选中状态的单选按钮或复选框
+- `:indeterminate` 既不是选中状态也不是未选中状态的单选按钮或复选框。只能通过 js 指定。如：全选复选框选择后，取消了子项的复选状态，此时全选复选框的状态。
+- `:default` 默认选中的单选按钮、复选框或选项
+  <Demo name="default" />
+- `:valid`
+- `:invalid`
+- `:in-range`
+- `:out-of-range`
+- `:required`
+- `:optional`
+- `:read-write`
+- `:read-only`
 
 ## 组合符（Combinator）
 

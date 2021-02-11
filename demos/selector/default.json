@@ -1,0 +1,4 @@
+{
+  "html": "<form>\n  <input type=\"radio\" name=\"key1\" checked />\n  <input type=\"radio\" name=\"key1\" />\n  <input type=\"radio\" name=\"key1\" />\n  <br />\n  <input type=\"checkbox\" name=\"key2\" />\n  <input type=\"checkbox\" name=\"key2\" />\n  <input type=\"checkbox\" name=\"key2\" checked />\n  <br />\n  <input type=\"reset\" />\n</form>\n",
+  "css": ":default {\n  box-shadow: 0 0 10px 10px #ccc;\n}\n"
+}

@@ -1,0 +1,4 @@
+{
+  "html": "<input />\n<input type=\"checkbox\" />\n<br />\n<input disabled />\n<input type=\"radio\" disabled />\n",
+  "css": ":enabled {\n  outline: 1px solid green;\n}\n:disabled {\n  outline: 1px solid red;\n}\n"
+}
