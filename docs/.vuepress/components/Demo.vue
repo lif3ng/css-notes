@@ -22,23 +22,38 @@ export default {
     };
   },
   mounted() {
-    // console.log(this);
     const path = this.$page.path.substring(1).replace(/.html$/, "");
-    // if (process.env.NODE_ENV === "development") {
-    // } else {
-    // }
-    import("page-playground")
-      .then(() =>
-        import(
-          /* webpackChunkName: '[index].demo_[request]' */ `../../../demos/${path}/${this.name}`
+    if (process.env.NODE_ENV === "development") {
+      import("page-playground")
+        .then(() =>
+          import(
+            /* webpackChunkName: '[index].demo_[request]' */ `../../../demos/${path}/${this.name}`
+          )
         )
-      )
-      .then((module) => {
-        const data = module.default;
-        console.log("demo data done", data);
-        this.demoData = { controlBtns: ["format", "fullscreen"], ...data };
-        this.loaded = true;
-      });
+        .then((module) => {
+          const data = module.default;
+          this.demoData = { controlBtns: ["format", "fullscreen"], ...data };
+          this.loaded = true;
+        });
+    } else {
+      import("page-playground")
+        .then(() =>
+          import(
+            /* webpackChunkName: '[index].[request]' */ `../../../.demos-cache/demos-${path.replace(
+              /\//g,
+              "-"
+            )}`
+          )
+        )
+        .then((module) => {
+          const data = module.default;
+          this.demoData = {
+            controlBtns: ["format", "fullscreen"],
+            ...data[this.name],
+          };
+          this.loaded = true;
+        });
+    }
   },
   methods: {
     toggleDetails(e) {
@@ -80,32 +95,36 @@ export default {
 };
 </script>
 <style scoped lang="stylus">
-details{
-  summary{
+details {
+  summary {
     margin-bottom: 1em;
     outline: none;
+
     &:hover {
-      .header-anchor{
-        opacity:1
+      .header-anchor {
+        opacity: 1;
       }
     }
+
     &:focus {
       text-decoration: underline;
     }
-    &:after{
-      content:'展开 Demo'
-      cursor:pointer;
+
+    &:after {
+      content: '展开 Demo';
+      cursor: pointer;
     }
+
     + * {
       overflow: hidden;
-      transition: height .3s
+      transition: height 0.3s;
     }
   }
-
 }
-details[open]{
-  summary:after{
-    content:'收起 Demo'
+
+details[open] {
+  summary:after {
+    content: '收起 Demo';
   }
 }
 </style>

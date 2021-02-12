@@ -2,9 +2,7 @@ const path = require("path");
 module.exports = {
   title: "CSS 笔记",
   base: process.env.ghpages ? "/css-notes/" : "/",
-  shouldPrefetch: () => {
-    return false;
-  },
+  shouldPrefetch: () => false,
   themeConfig: {
     sidebarDepth: 2,
     sidebar: [
