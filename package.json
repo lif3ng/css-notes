@@ -17,7 +17,7 @@
   },
   "scripts": {
     "start": "vuepress dev docs",
-    "build": "node scripts/mergeDemo.js; vuepress build docs"
+    "build": "node scripts/mergeDemo.js; cp README.md docs; vuepress build docs"
   },
   "husky": {
     "hooks": {

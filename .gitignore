@@ -1,3 +1,4 @@
 node_modules
 .demos-cache
 docs/.vuepress/dist
+docs/README.md
