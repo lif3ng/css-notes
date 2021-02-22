@@ -19,6 +19,15 @@
 
 ## align-items
 
+`align-items` 属性用于弹性容器，定义弹性元素在垂轴上的对齐方式。
+
+`flex-start`, `flex-end`, `center` 三个值效果显而易见。
+
+- `baseline` 第一行文字基线（底边）对其
+- `stretch` 拉伸至填满垂轴，使用 `margin` 可以增加填满的空间
+
+<Demo name="align-items" />
+
 ## align-self
 
 ## 参考
