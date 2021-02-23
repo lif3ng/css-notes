@@ -1,0 +1,13 @@
+{
+  "html": "<div class=\"container\">\n  <div>one</div>\n  <div>two<br />two</div>\n  <div>three<br />three<br />three</div>\n</div>\n",
+  "css": ".container {\n  display: flex;\n  width: 200px;\n  align-items: stretch;\n  /* flex-direction: column; */\n}\n.container div {\n  flex: 1;\n  text-align: center;\n  border: 1px solid #ccc;\n}\n.container :first-child {\n  font-size: 2em;\n  background: #def;\n}\n.container :nth-child(2) {\n  font-size: 1.5em;\n}\n",
+  "cssTpl": ".container :first-child {\n  align-self: {{}}\n}",
+  "cssValueList": [
+    "flex-start",
+    "flex-end",
+    "center",
+    "baseline",
+    "stretch",
+    "auto"
+  ]
+}

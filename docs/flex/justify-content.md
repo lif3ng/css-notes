@@ -19,7 +19,7 @@
 
 ## align-items
 
-`align-items` 属性用于弹性容器，定义弹性元素在垂轴上的对齐方式。
+`align-items` 属性用于弹性容器，定义弹性子元素在垂轴上的对齐方式。
 
 `flex-start`, `flex-end`, `center` 三个值效果显而易见。
 
@@ -29,6 +29,14 @@
 <Demo name="align-items" />
 
 ## align-self
+
+`align-self` 属性用于弹性子元素，用于在单个元素上覆盖 `align-items`, 定义在弹性子元素上。
+
+默认值为 `auto`,即弹性容器 `align-items` 的取值。
+
+`baseline` 的取值的效果有点奇怪（todo）
+
+<Demo name="align-self" />
 
 ## 参考
 
