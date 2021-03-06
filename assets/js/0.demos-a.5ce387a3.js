@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{331:function(n){n.exports=JSON.parse('{"name1":{"html":"<p>xx</p>","css":"p{background:blue}"},"name2":{"html":"<div>demo2</div>\\n","css":"div {\\n  color: green;\\n}\\n"}}')}}]);
