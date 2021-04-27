@@ -20,6 +20,11 @@ module.exports = {
           "/flex/justify-content",
         ],
       },
+      {
+        title: "网格布局",
+        children: ["/grid/basic"],
+      },
+      { title: "列表", children: ["list/styletype"] },
     ],
   },
   markdown: {

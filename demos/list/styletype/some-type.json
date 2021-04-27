@@ -1,0 +1,18 @@
+{
+  "html": "<ul>\n  <li>aaa</li>\n  <li>bbb</li>\n  <li>ccc</li>\n</ul>\n",
+  "css": "",
+  "cssTpl": "li{\n  list-style-type: {{}}\n}",
+  "cssValueList": [
+    "none",
+    "disc",
+    "circle",
+    "square",
+    "decimal",
+    "decimal-leading-zero",
+    "lower-roman",
+    "upper-roman",
+    "simp-chinese-informal",
+    "simp-chinese-formal",
+    "'some string'"
+  ]
+}
