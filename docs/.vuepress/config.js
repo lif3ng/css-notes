@@ -11,6 +11,7 @@ module.exports = {
       "priority",
       "/unit",
       "/variables",
+      "/replaced",
       {
         title: "弹性布局",
         children: [
