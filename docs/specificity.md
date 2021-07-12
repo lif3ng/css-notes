@@ -16,10 +16,19 @@
 
 通用选择器（\*）、组合器（`>`、`+`、`~`)、空格 对优先级没有影响，不参与优先级的计算。
 
+会根据这三类选择器产生产生一个特制度数值（Specificity），如 `#body` 100, `.body#body` 110, `body.body` 011.
+
+Specificity 小工具：
+
+- [Specificity Visualizer](https://isellsoap.github.io/specificity-visualizer/)
+- [CSS Specificity Graph Generator](https://jonassebastianohlsson.com/specificity-graph/)
+
 ## 顺序
 
 每个元素的每个属性，在选择器优先级相同 或 同为行内元素 时，以后声明的为准。
 
 ## 参考
 
-https://www.w3.org/TR/css-cascade
+- https://www.w3.org/TR/css-cascade
+- https://css-tricks.com/specifics-on-css-specificity/
+- https://developer.mozilla.org/zh-CN/docs/Web/CSS/Specificity

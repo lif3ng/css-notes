@@ -8,7 +8,7 @@ module.exports = {
     sidebar: [
       "value-defs",
       "selector",
-      "priority",
+      "specificity",
       "/unit",
       "/variables",
       "/replaced",
