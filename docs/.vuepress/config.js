@@ -13,6 +13,14 @@ module.exports = {
       "/variables",
       "/replaced",
       {
+        title: "盒模型",
+        children: [
+          "/box-model/basic",
+          "/box-model/border",
+          "/box-model/box-shadow",
+        ],
+      },
+      {
         title: "弹性布局",
         children: [
           "/flex/basic",

@@ -1,0 +1,6 @@
+{
+  "html": "<div></div>\n",
+  "css": "div {\n  width: 100px;\n  height: 100px;\n  background: transparent;\n  border: 5px solid rgba(0, 0, 100, 0.2);\n  margin: 10px;\n  padding: 10px;\n}\n",
+  "cssTpl": "div{\n  box-shadow: {{}}\n}",
+  "cssValueList": ["10px 10px 5px red;", "inset 10px 10px 5px red;"]
+}
