@@ -7,6 +7,7 @@ module.exports = {
     sidebarDepth: 2,
     sidebar: [
       "value-defs",
+      "value-keyword",
       "selector",
       "specificity",
       "/unit",
