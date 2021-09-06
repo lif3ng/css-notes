@@ -1,0 +1,6 @@
+{
+  "html": "<div class=\"container\">\n  <span class=\"shape\"></span>\n  <p>\n    text text text text text text text text text text text text text text text\n    text text text text text\n  </p>\n</div>\n",
+  "css": ".container {\n  width: 200px;\n}\n\n.shape {\n  float: left;\n  width: 100px;\n  height: 100px;\n  --gradient: linear-gradient(to right bottom, blue 0, transparent 80%);\n  background: var(--gradient);\n  shape-outside: var(--gradient);\n}\n",
+  "cssTpl": ".shape{\n  shape-image-threshold: {{}}\n}",
+  "cssValueList": ["0", "0.2", "0.5", "0.8", "0.9"]
+}

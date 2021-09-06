@@ -1,0 +1,14 @@
+{
+  "html": "<div class=\"container\">\n  <span class=\"shape\"></span>\n  <p>\n    text text text text text text text text text text text text text text text\n    text text text text text\n  </p>\n</div>\n",
+  "css": ".container {\n  width: 200px;\n}\n\n.shape {\n  float: left;\n  width: 100px;\n  height: 100px;\n\n  background: #ddd;\n  background-clip: content-box;\n}\n",
+  "cssTpl": ".shape{\n  shape-outside: {{}}\n}",
+  "cssValueList": [
+    "circle(50%)",
+    "circle(50% at 0 0)",
+    "ellipse(50px 25px)",
+    "ellipse(farthest-side closest-side at 1% 10%)",
+    "inset(10px 20px 30px 40px round 10px)",
+    "polygon(nonzero, 0 0, 100px 0, 0 100px)",
+    "polygon(evenodd, 0 0, 100px 0, 0 100px)"
+  ]
+}

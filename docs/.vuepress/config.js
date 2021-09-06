@@ -35,6 +35,7 @@ module.exports = {
         children: ["/grid/basic"],
       },
       { title: "列表", children: ["list/styletype"] },
+      "shapes",
     ],
   },
   markdown: {
