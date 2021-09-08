@@ -1,0 +1,4 @@
+{
+  "html": "<div class=\"container\">\n  <p>p 1</p>\n  <p>p 2</p>\n  <p class=\"span\">p 3</p>\n  <p>p 4</p>\n  <p>p 5</p>\n</div>\n",
+  "css": "div {\n  column-count: 2;\n}\np {\n  margin-top: 0;\n  line-height: 2em;\n  background: #def;\n}\n.span {\n  column-span: all;\n}\n"
+}

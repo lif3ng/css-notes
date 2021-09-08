@@ -36,6 +36,7 @@ module.exports = {
       },
       { title: "列表", children: ["list/styletype"] },
       "shapes",
+      "column",
     ],
   },
   markdown: {
