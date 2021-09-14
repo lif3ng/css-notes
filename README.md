@@ -8,7 +8,6 @@
 
 - 《CSS 权威指南》
 - [《深入解析 CSS》](https://www.ituring.com.cn/book/2583)
+- 张鑫旭老师的《CSS 世界》《CSS 选择器世界》《CSS 新世界》，大量 Demo 从中搬运
 
-分类参考了:
-
-- [Tailwind CSS 官方文档](https://tailwindcss.com/docs)
+分类打算参考下 [Tailwind CSS 官方文档](https://tailwindcss.com/docs)，Tailwind CSS 的 demo 都挺好看的。
