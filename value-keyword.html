@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>属性值全局关键字 | CSS 笔记</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/css-notes/assets/css/0.styles.0b63f96d.css" as="style"><link rel="preload" href="/css-notes/assets/js/app.a0bb35a6.js" as="script"><link rel="preload" href="/css-notes/assets/js/17.a9e2a5ec.js" as="script"><link rel="preload" href="/css-notes/assets/js/43.da3ac201.js" as="script">
+    <link rel="stylesheet" href="/css-notes/assets/css/0.styles.0b63f96d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/css-notes/" class="home-link router-link-active"><!----> <span class="site-name">CSS 笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><a href="/css-notes/value-defs.html" class="sidebar-link">值定义语法</a></li><li><a href="/css-notes/value-keyword.html" aria-current="page" class="active sidebar-link">属性值全局关键字</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/css-notes/value-keyword.html#inherit-继承" class="sidebar-link">inherit 继承</a></li><li class="sidebar-sub-header"><a href="/css-notes/value-keyword.html#initial-初始值" class="sidebar-link">initial 初始值</a></li><li class="sidebar-sub-header"><a href="/css-notes/value-keyword.html#unset-不固定值" class="sidebar-link">unset 不固定值</a></li><li class="sidebar-sub-header"><a href="/css-notes/value-keyword.html#revert-恢复" class="sidebar-link">revert 恢复</a></li></ul></li><li><a href="/css-notes/selector.html" class="sidebar-link">选择器</a></li><li><a href="/css-notes/specificity.html" class="sidebar-link">优先级</a></li><li><a href="/css-notes/unit.html" class="sidebar-link">单位</a></li><li><a href="/css-notes/variables.html" class="sidebar-link">CSS 变量</a></li><li><a href="/css-notes/replaced.html" class="sidebar-link">替换元素</a></li><li><a href="/css-notes/font-variant.html" class="sidebar-link">font-variant</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>盒模型</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>弹性布局</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>网格布局</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>列表</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/css-notes/shapes.html" class="sidebar-link">CSS Shapes 布局</a></li><li><a href="/css-notes/column.html" class="sidebar-link">分栏布局</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="属性值全局关键字"><a href="#属性值全局关键字" class="header-anchor">#</a> 属性值全局关键字</h1> <h2 id="inherit-继承"><a href="#inherit-继承" class="header-anchor">#</a> inherit 继承</h2> <p>继承父元素的属性值</p> <h2 id="initial-初始值"><a href="#initial-初始值" class="header-anchor">#</a> initial 初始值</h2> <p>可以把当前 CSS 属性的计算值还原成 CSS 语法中规定的 <strong>（属性的）</strong> 初始值。</p> <p>注意 <code>initial</code> 对应的初始值，不是当前元素的属性初始值。</p> <p>比如<code>display</code>属性的初始值是<code>inline</code>，无论 <code>display: initial</code> 给到的元素是 <code>&lt;div&gt;</code>、<code>&lt;span&gt;</code> 还是 <code>&lt;p&gt;</code>, 效果都是 <code>display: inline</code>.</p> <h2 id="unset-不固定值"><a href="#unset-不固定值" class="header-anchor">#</a> unset 不固定值</h2> <p>如果当前属性是具有继承特性的，则等同于 <code>inherit</code></p> <p>如果当前属性是没有继承特性的，则等同于 <code>initial</code></p> <p>可用于重置浏览器 user agent 样式，不需要逐个覆盖，只需要 <code>all: unset</code>.</p> <h2 id="revert-恢复"><a href="#revert-恢复" class="header-anchor">#</a> revert 恢复</h2> <p><code>revert</code> 可以使 CSS 属性值恢复成当前元素的当前属性的浏览器默认值。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/css-notes/value-defs.html" class="prev">
+        值定义语法
+      </a></span> <span class="next"><a href="/css-notes/selector.html">
+        选择器
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/css-notes/assets/js/app.a0bb35a6.js" defer></script><script src="/css-notes/assets/js/17.a9e2a5ec.js" defer></script><script src="/css-notes/assets/js/43.da3ac201.js" defer></script>
+  </body>
+</html>
