@@ -1,0 +1,4 @@
+{
+  "html": "<div>\n  1st, 2nd, 3rd, 4th, 5th\n</div>\n",
+  "css": "div {\n  font-family: system-ui;\n  font-variant-numeric: ordinal;\n}\n"
+}

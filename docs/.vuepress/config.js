@@ -13,6 +13,7 @@ module.exports = {
       "/unit",
       "/variables",
       "/replaced",
+      "/font-variant",
       {
         title: "盒模型",
         children: [

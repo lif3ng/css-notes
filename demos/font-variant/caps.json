@@ -1,0 +1,14 @@
+{
+  "html": "<p>Caps</p>\n",
+  "css": "p {\n  font-size: 30px;\n}\n",
+  "cssTpl": "p{\n  font-variant-caps: {{}}\n}",
+  "cssValueList": [
+    "normal",
+    "small-caps",
+    "all-small-caps",
+    "petite-caps",
+    "all-petite-caps",
+    "unicase",
+    "titling-caps"
+  ]
+}

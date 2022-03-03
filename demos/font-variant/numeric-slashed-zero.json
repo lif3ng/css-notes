@@ -1,0 +1,6 @@
+{
+  "html": "<div>0</div>\n",
+  "css": "@font-face {\n  font-family: \"Fira Sans\";\n  font-style: normal;\n  font-weight: 400;\n  src: url(FiraSans-Regular.woff2) format(\"woff2\");\n}\ndiv {\n  font-family: \"Fira Sans\";\n  font-size: 50px;\n}\n",
+  "cssTpl": "div{\n  font-variant-numeric: {{}}\n}",
+  "cssValueList": ["normal", "slashed-zero"]
+}
